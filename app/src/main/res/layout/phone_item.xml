@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:elevation="10dp"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_weight="2"
+        android:id="@+id/profile_image"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_person"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#B8B8B8"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홍길동"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01022225555"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>
